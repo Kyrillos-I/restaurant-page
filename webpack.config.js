@@ -7,6 +7,19 @@ module.exports= {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
     },
+    devtool: 'inline-source-map',
+    module: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            },
+            {
+                test: /\.(png|webp)$/i,
+                type: 'asset/resource',
+            },
+        ],
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
