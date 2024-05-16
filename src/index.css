@@ -59,7 +59,22 @@ nav{
     width: 30vw;
     height: 20vw;
 }
-.home-description{
+.home-description,
+.abt-description{
     color: white;
     font-size: 3rem;
+}
+
+.food{
+   height: 10rem;
+   width: 10rem;
+}
+.item1,
+.item2{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    color: white;
 }

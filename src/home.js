@@ -2,8 +2,6 @@ import location from './location.webp'
 
 
 function home(){
-    let tab = document.querySelector(".home");
-    tab.classList.add('selected');
     
     let content = document.querySelector('#content');
     let locationImg = document.createElement("img");
